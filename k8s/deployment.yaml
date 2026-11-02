@@ -1,0 +1,26 @@
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: mithil-portfolio
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: mithil-portfolio
+
+  template:
+    metadata:
+      labels:
+        app: mithil-portfolio
+
+    spec:
+      containers:
+        - name: portfolio-container
+          image: mithilkumar/mithil-portfolio:v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
