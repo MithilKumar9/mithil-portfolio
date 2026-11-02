@@ -1,0 +1,28 @@
+
+# Node dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Terraform generated files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Private keys
+*.pem
+*.key
